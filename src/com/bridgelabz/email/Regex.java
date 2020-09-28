@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 
 public class Regex {
-	private static final Pattern EMAIL_PATTERN = Pattern.compile("^[a-z0-9]+@[a-z0-9]+.[a-z]{2,}$");
+	private static final Pattern EMAIL_PATTERN = Pattern.compile("^[a-z0-9]+[_+-.]{0,1}[a-z0-9]+@[a-z0-9]+.[a-z]{2,}$");
 	private static Scanner sc;
     
 	private boolean checkEmail(String email) {
